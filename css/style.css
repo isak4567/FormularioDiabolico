@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&family=Syne+Tactile&display=swap');
+
+@font-face {
+    font-family: 'Oh-Whale'; /*a name to be used later*/
+    src: url('../fonts/oh-whale.regular.ttf'); /*URL to font*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(0deg, rgba(101, 242, 255, 0.87), rgba(239, 255, 250, 0.863)), url(../img/niceDevil.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'arial-rounded-regular', sans-serif;
+    font-weight: 200;
+}
+
+.pantallaDeCarga {
+    width: 100%;
+    height: 100vh;
+    max-height: 1200px;
+    background-image: url(../img/INFIERNO\ -\ PASAJE\ AL\ INFIERNO\ -\ pasaje-al-infierno.jpg);
+    background-position: center;
+    background-size: cover;
+    animation-name: Carga;
+    animation-duration: 3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes Carga {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        transform: scale(1.1);
+    }
+    
+    40% {
+        transform: scale(1.2);
+    }
+
+    99% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0, -100%);
+    }
+}
+
+.cargaTexto {
+    color: rgb(255, 127, 180);
+    margin: 2%;
+    font-size: 6em;
+    font-family: 'Oh-Whale';
+    opacity: 0;
+}
+
+
+
+.title {
+    margin: 2% 2% 0.5% 2%;
+    text-align: center;
+}
+
+.description {
+    margin-bottom: 2%;
+    text-align: center;
+    color: rgba(239, 255, 250, 0.863);
+}
+
+.formularioDelDiablo {
+    width: 60%;
+    padding: 2%;
+    margin: auto;
+    border: 2px solid rgba(0, 0, 0, 0.602);
+    margin-bottom: 3%;
+    border-radius: 10px;
+    color: brown;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+
+input, select, textarea {
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+label {
+    text-align: center;
+}
+
+.textoForm {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.gridInput {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+}

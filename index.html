@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega tu alma</title>
+    <link href="https://www.dafontfree.net/embed/YXJpYWwtcm91bmRlZC1yZWd1bGFyJmRhdGEvMS9hLzIwL3VuaWNvZGUuYXJpYWxyLnR0Zg"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="pantallaDeCarga">
+        
+        <audio autoplay preload="auto">
+            <source src="./audio/heartbeat.mp3" type="audio/mp3">
+            <source src="./audio/heartbeat.ogg" type="audio/ogg">
+            <source src="./audio/heartbeat.wav" type="audio/wav">
+            Tu navegador no soporta el tag audio</audio>
+        <p class="cargaTexto cargaTexto1">Satis</p>
+        <p class="cargaTexto cargaTexto2">Effugium </p>
+        <p class="cargaTexto cargaTexto3">Fugitat</p>
+
+    </div>
+
+    <main>
+        <h1 id="title" class="title"> Hagamos un lindo acuerdo</h1>
+
+        <p id="description" class="description">Todo lo que firmes y veas esta para "mutuo" beneficio.</p>
+
+        <form id="survey-form" action="" class="formularioDelDiablo">
+
+            <div class="form-group">
+                <label id="label-name" for="name">Nombre</label>
+                <input id="name" placeholder="nombre" type="text" required>
+            </div>
+
+            <div class="form-group">
+                <label id="label-email" for="email">Correo</label>
+                <input id="email" type="email" placeholder="correo@damelopapi" required>
+            </div>
+
+            <div class="form-group">
+                <label id="label-number" for="number">Edad</label>
+                <input id="number" placeholder="69666420" required type="number" min="18" max="69666420">
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown"> ¿Que hermoso lugar paradisiaco de los 7 niveles te gustaria que te mande?</label>
+                <select name="dropdown" id="dropdown">
+                    <option disabled selected value>Vacaciones de por vida a un simple paso</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p class="textoForm">Crees en...</p>
+
+                <div class="gridInput">
+                    <label for="">
+                        <input name="creencias" value="Cristianimo" type="radio">
+                        Cristianismo.
+                    </label>
+
+                    <label for="">
+                        <input name="creencias" value="Judaismo" type="radio">
+                        Judaismo.
+                    </label>
+
+                    <label for="">
+                        <input name="creencias" value="BitCoin" type="radio">
+                        BitCoin.
+                    </label>
+
+                    <label for="">
+                        <input name="creencias" value="Oroscopo" type="radio">
+                        Oroscopo.
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <p class="textoForm">Solo por curiosidad, ¿Que Pecados Cometiste?</p>
+
+                <div class="gridInput">
+                    <label for="">
+                        <input name="Pecados" value="" type="checkbox">
+                    </label>
+
+                    <label for="">
+                        <input name="Pecados" value="" type="checkbox">
+                    </label>
+
+                    <label for="">
+                        <input name="Pecados" value="" type="checkbox">
+                    </label>
+
+                    <label for="">
+                        <input name="Pecados" value="" type="checkbox">
+                    </label>
+
+                    <label for="">
+                        <input name="Pecados" value="" type="checkbox">
+                    </label>
+
+                    <label for="">
+                        <input name="Pecados" value="" type="checkbox">
+                    </label>
+
+                    <label for="">
+                        <input name="Pecados" value="" type="checkbox">
+                    </label>
+
+                    <label for="">
+                        <input name="Pecados" value="" type="checkbox">
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="dudas"> ¿Dudas? </label>
+                <textarea name="dudas" id="dudas" cols="30" rows="10" placeholder="Ni pienso leerlas">Consulte todos sus problemas</textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+
+    </main>
+</body>
+
+</html>
