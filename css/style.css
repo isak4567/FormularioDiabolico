@@ -28,11 +28,18 @@
     z-index: -1
 }
 
-.Tapar {
+.Tocar {
     background-color: black;
     height: 10vh;
     z-index: 10;
-    animation: Sacar 0.1s linear 10s 1 forwards;
+    text-align: center;
+    font-size: 2em;
+    animation: Sacar 0.1s linear 9s 1 forwards;
+}
+
+.linkTocar {
+    text-decoration: none;
+    color: white;
 }
 
 @keyframes Sacar {
